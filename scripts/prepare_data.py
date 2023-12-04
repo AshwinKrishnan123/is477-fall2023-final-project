@@ -4,10 +4,11 @@ import requests
 url ='https://archive.ics.uci.edu/static/public/862/turkish+music+emotion.zip'
 response = requests.get(url)
 
-with open ('turkish+music+emotion.zip', mode='wb') as f:
+filename= 'data/turkish+music+emotion.zip'
+
+with open (filename, mode='wb') as f:
     f.write(response.content)
 
-filename= 'turkish+music+emotion.zip'
 with open (filename, mode='rb') as f:
     data=f.read()
     sha256hash = hashlib.sha256(data).hexdigest()
