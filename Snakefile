@@ -1,6 +1,6 @@
 rule prepare:
   shell:
-    "python scripts/prepare.py"
+    "python scripts/prepare_data.py"
 
 rule profile:
   shell:
