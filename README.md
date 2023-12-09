@@ -8,7 +8,7 @@ The Turkish Music Emotion dataset created by Mehmet Bilal Er from Harran Univers
 Stefan Chu: Worked on prepare_data.py and profile.py. Created the Snakefile for workflow to run all python files. Created gitignore and requirements.txt files. Ashwin Krishnan: worked on the prepare_data.py, requirements.txt file, and analysis.py.
 
 # Analysis
-We created a graph that visualizes the relationship between the "_HarmonicChangeDetectionFunction_PeriodEntropy" (harmonics in audio signals) and "Class" variables. Essentially, it shows which values of harmonic detection lead to music being classified in the four different emotions of sounding "happy," "sad," "angry," and "relax(ed)." 
+We constructed a scatter plot with a regression line to visually illustrate how various harmonies in audio signals correspond to distinct classifications in the "Class" variable. In essence, this visualization depicts the correlation between specific harmonic detection values and the categorization of music into the four emotional states of "happy," "sad," "angry," and "relaxed.” This gives us an understanding of how harmonies in audio signals are correlated with us feeling certain emotions when listening to the audio.
 
 # Workflow
 
