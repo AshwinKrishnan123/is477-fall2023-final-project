@@ -2,7 +2,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-df = pd.read_csv("../data/Acoustic Features 2.csv")
+df = pd.read_csv("../data/Acoustic Features.csv")
 df['Class'] = pd.Categorical(df['Class']).codes
 df['_HarmonicChangeDetectionFunction_PeriodEntropy'] = pd.to_numeric(df['_HarmonicChangeDetectionFunction_PeriodEntropy'], errors='coerce')
 df = df.dropna(subset=['_HarmonicChangeDetectionFunction_PeriodEntropy'])
