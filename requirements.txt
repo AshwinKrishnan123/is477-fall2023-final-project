@@ -2,3 +2,5 @@ requests
 snakemake
 pandas
 ydata_profiling
+seaborn
+matplotlib
