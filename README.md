@@ -13,6 +13,7 @@ We created a graph that visualizes the relationship between the "_HarmonicChange
 # Workflow
 
 # Reproducing
+Check requirements.txt to make sure you have all the required dependencies. If not, run pip install -r requirements.txt. Then download the dataset by running prepare_data.py with the command snakemake --core 1 prepare in the terminal. Next, extract the 'Acoustic Features.csv' from the turkish+music+emotion.zip file into the data folder. Next, to get the profile report, run the command snakemake --core 1 profile in the terminal. The resulting report.html can be found in the profiling folder. Finally, run snakemake --core 1 analysis to output plot.png in the results folder. We have come across an error where this sometimes runs profile.py and crashes. To fix this, move profile.py out of the scripts folder and run snakemake --core 1 analysis in the terminal again. The resulting plot.png will then show up in the results folder. 
 
 # Software License
 
