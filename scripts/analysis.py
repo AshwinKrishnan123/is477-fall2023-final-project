@@ -3,6 +3,9 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 df = pd.read_csv("../data/Acoustic Features 2.csv")
+df['Class'] = pd.Categorical(df['Class']).codes
+df['_HarmonicChangeDetectionFunction_PeriodEntropy'] = pd.to_numeric(df['_HarmonicChangeDetectionFunction_PeriodEntropy'], errors='coerce')
+df = df.dropna(subset=['_HarmonicChangeDetectionFunction_PeriodEntropy'])
 
 plt.figure(figsize=(10, 6))
 sns.regplot(x='Class', y='_HarmonicChangeDetectionFunction_PeriodEntropy', data=df, scatter_kws={'s': 20, 'alpha': 0.5})
