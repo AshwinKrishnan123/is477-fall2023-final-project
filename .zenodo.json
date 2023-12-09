@@ -1,35 +1,27 @@
 {
+    "title": "IS 477 Fall 2023 Final Project",
+    "description": "Final project on which levels of harmonics lead to different classifications of emotions pertaining to music.",
     "creators": [
         {
-            "orcid": "0009-0001-4843-0689",
-            "affiliation": "University of Illinois at Urbana Champaign Student",
-            "name": "Krishnan, Ashwin"
+            "name": "Krishnan, Ashwin",
+            "orcid": "0009-0001-4843-0689"
         },
         {
-            "orcid": "0009-0008-5230-9954",
-            "affiliation": "University of Illinois at Urbana Champaign Student",
-            "name": "Chu, Stefan"
+            "name": "Chu, Stefan",
+            "orcid": "0009-0008-5230-9954"
         }
+      
     ],
-
-    "license": "MIT License",
-
-    "title": "IS 477 Fall 2023 Final Project",
-
+    
     "related_identifiers": [
         {
             "scheme": "doi",
             "identifier": "10.24432/C5JG93",
-            "relation": "isDocumentedBy",
-            "resource_type": "Dataset"
+            "relation": "isDocumentedBy"
         }
     ],
-
+    "access_right": "open",
     "keywords": ["Music", "Sentiment Analysis"],
-
-    "communities": [
-        {"identifier": "IS477"}
-    ],
-
-    "grants": [{"id":"777541"}]
+    "upload_type": "software",
+    "license": "MIT"
 }
