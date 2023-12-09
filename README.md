@@ -11,6 +11,7 @@ Stefan Chu: Worked on prepare_data.py and profile.py. Created the Snakefile for 
 We constructed a scatter plot with a regression line to visually illustrate how various harmonies in audio signals correspond to distinct classifications in the "Class" variable. In essence, this visualization depicts the correlation between specific harmonic detection values and the categorization of music into the four emotional states of "happy," "sad," "angry," and "relaxed.” This gives us an understanding of how harmonies in audio signals are correlated with us feeling certain emotions when listening to the audio.
 
 # Workflow
+![Screenshot](workflow.png)
 
 # Reproducing
 Check requirements.txt to make sure you have all the required dependencies. If not, run pip install -r requirements.txt. Then download the dataset by running prepare_data.py with the command snakemake --core 1 prepare in the terminal. Next, extract the 'Acoustic Features.csv' from the turkish+music+emotion.zip file into the data folder. Next, to get the profile report, run the command snakemake --core 1 profile in the terminal. The resulting report.html can be found in the profiling folder. Finally, run snakemake --core 1 analysis to output plot.png in the results folder. We have come across an error where this sometimes runs profile.py and crashes. To fix this, move profile.py out of the scripts folder and run snakemake --core 1 analysis in the terminal again. The resulting plot.png will then show up in the results folder. 
